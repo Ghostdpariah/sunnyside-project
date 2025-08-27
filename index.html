@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!--Fraunces-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Barlow-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Barlow", sans-serif;
+      }
+
+      .container {
+        background-image: url(image-header.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+      }
+
+      nav .nav-links {
+        display: flex;
+        gap: 50px;
+      }
+      nav .nav-links a {
+        text-decoration: none;
+        color: whitesmoke;
+      }
+
+      nav .nav-links button {
+        border: none;
+        width: 100px;
+        padding: 10px;
+        font-size: 16px;
+        font-family: "Barlow";
+        font-weight: 600;
+        border-radius: 40px;
+        margin-top: -10px;
+      }
+
+      h1 {
+        font-size: 50px;
+        position: absolute;
+        bottom: 400px;
+        right: 30%;
+        color: white;
+        font-family: "fraunces";
+        letter-spacing: 5px;
+      }
+
+      .head-arrow img {
+        position: absolute;
+        bottom: 300px;
+        left: 50%;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+        margin: 0;
+        padding: 0;
+      }
+      .grid-item {
+        margin: auto;
+      }
+
+      .grid-item h2 {
+        font-size: 30px;
+        text-align: center;
+        font-family: "fraunces";
+        justify-content: space-between;
+        height: 80px;
+        font-weight: 700;
+      }
+
+      .grid-item p {
+        text-align: center;
+        line-height: 30px;
+        font-family: "Barlow";
+        font-weight: 600;
+        color: hsl(232, 10%, 55%);
+      }
+      .grid-item h3 {
+        text-align: center;
+      }
+
+      .overlay {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        position: relative;
+        margin-top: -210px;
+      }
+
+      .overlay-item p {
+        line-height: 25px;
+        font-weight: 500;
+      }
+
+      .overlay-item h3 {
+        color: hsl(167, 40%, 24%);
+      }
+
+      .overlay-item span {
+        color: hsl(198, 62%, 26%);
+      }
+
+      .overlay h3 {
+        font-family: "fraunces";
+        font-weight: 700;
+        font-size: 32px;
+      }
+
+      .testimonial {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 100px;
+        gap: 0;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .testimonial img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: relative;
+        margin-left: 20px;
+      }
+
+      .testimonial p {
+        font-family: "Barlow";
+        line-height: 25px;
+      }
+
+      .testimonial h5 {
+        font-family: "fraunces";
+        font-size: 16px;
+      }
+
+      .testimonial span {
+        font-family: "Barlow";
+        font-size: 10px;
+        color: hsl(232, 10%, 55%);
+        position: relative;
+        top: -30px;
+        letter-spacing: 1px;
+      }
+
+      h4 {
+        text-align: center;
+        margin-top: 100px;
+        letter-spacing: 10px;
+        color: hsl(232, 10%, 55%);
+      }
+
+      .gallery {
+        display: flex;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      footer {
+        background-color: hsla(167, 40%, 52%, 0.7);
+        height: 300px;
+        margin-top: -30px;
+      }
+      footer h5 {
+        text-align: center;
+        font-family: "Barlow";
+        font-size: 30px;
+        font-weight: 750;
+        letter-spacing: 1px;
+        margin: auto;
+        color: rgb(48, 114, 100);
+        padding: 100px;
+        padding-bottom: 20px;
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 30px;
+        padding-left: 620px;
+      }
+      .footer-links a {
+        text-decoration: none;
+        color: rgb(48, 114, 100);
+      }
+
+      .footer-icons {
+        display: flex;
+        gap: 30px;
+        padding-left: 650px;
+        padding-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Navigation-->
+    <section class="container">
+      <nav>
+        <div>
+          <img src="logo.svg" alt="logo" />
+        </div>
+        <div class="nav-links">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+          <button>CONTACT</button>
+        </div>
+      </nav>
+    </section>
+
+    <header class="head-arrow">
+      <h1>WE ARE CREATIVES</h1>
+      <div>
+        <img src="icon-arrow-down.svg" alt="arrow_down" />
+      </div>
+    </header>
+    <main>
+      <section class="grid-container">
+        <div class="grid-item">
+          <h2>Transform your <br />brand</h2>
+
+          <p>
+            We are a full-service creative agency specializing in<br />
+            helping brands grow fast. Engage your clients through<br />
+            compelling visuals that do most of the marketing for you.
+          </p>
+
+          <p>
+            <a href="#">LEARN MORE</a>
+          </p>
+        </div>
+
+        <div class="grid-item">
+          <img src="image-transform.jpg" alt="Egg" />
+        </div>
+
+        <div class="grid-item">
+          <img src="image-stand-out.jpg" alt="cup" />
+        </div>
+
+        <div class="grid-item">
+          <h2>Stand out to the right <br />audience</h2>
+
+          <p>
+            Using a collaborative formula of designers, researchers,<br />
+            photographers, videographers, and copywriters, we’ll<br />
+            build and extend your brand in digital places.
+          </p>
+
+          <p>
+            <a href="#">LEARN MORE</a>
+          </p>
+        </div>
+
+        <div class="grid-item">
+          <img src="image-graphic-design.jpg" alt="Cherry" />
+        </div>
+
+        <div class="grid-item">
+          <img src="image-photography.jpg" alt="Orange" />
+        </div>
+      </section>
+
+      <!--Graphics Design-->
+      <section class="overlay">
+        <div class="overlay-item">
+          <h3>Graphic Design</h3>
+          <p>
+            Graphic design Great design makes you memorable. We deliver<br />
+            artwork that underscores your brand message <br />and captures
+            potential clients’ attention.
+          </p>
+        </div>
+
+        <div class="overlay-item">
+          <h3><span>Photography</span></h3>
+
+          <p>
+            Increase your credibility by getting the most<br />
+            stunning, high-quality photos that improve your<br />
+            business image
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!--Client Testimonials-->
+    <section>
+      <div>
+        <h4>CLIENT TESTIMONIALS</h4>
+        <!--Emily-->
+        <div class="testimonial">
+          <div>
+            <div>
+              <img src="image-emily.jpg" alt="Emily" />
+            </div>
+
+            <p>
+              We put our trust in Sunnyside and they<br />delivered, making sure
+              our needs were met<br />
+              and deadlines were always hit
+            </p>
+            <h5>Emily R.</h5>
+            <span> Marketing Director </span>
+          </div>
+
+          <!--Thomas-->
+          <div>
+            <div>
+              <img src="image-thomas.jpg" alt="Thomas" />
+            </div>
+
+            <p>
+              Sunnyside's enthusiasm coupled with their<br />keen interest in
+              our brand's success made it<br />
+              a satisfying and enjoyable experience.
+            </p>
+            <h5>Thomas S.</h5>
+            <span> Chief Operating Officier </span>
+          </div>
+
+          <!--Jennie F.-->
+          <div>
+            <div>
+              <img src="image-jennie.jpg" alt="Jennie" />
+            </div>
+
+            <p>
+              Incredible end result! Our sale increased<br />over 400% when we
+              worked when we worked with Sunnyside.<br />
+              Higly recommended!
+            </p>
+            <h5>Jennie F.</h5>
+            <span> Business Owner </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Gallery-->
+
+    <section class="gallery">
+      <div>
+        <img src="image-gallery-milkbottles.jpg" alt="Milk_bottles" />
+      </div>
+
+      <div>
+        <img src="image-gallery-orange.jpg" alt="Orange" />
+      </div>
+
+      <div>
+        <img src="image-gallery-cone.jpg" alt="Cone" />
+      </div>
+
+      <div>
+        <img src="image-gallery-sugarcubes.jpg" alt="Sugarcubes" />
+      </div>
+    </section>
+
+    <footer>
+      <h5>sunnyside</h5>
+
+      <div class="footer-links">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+      </div>
+
+      <div class="footer-icons">
+        <img src="icon-facebook.svg" />
+        <img src="icon-instagram.svg" />
+        <img src="icon-twitter.svg" />
+        <img src="icon-pinterest.svg" />
+      </div>
+    </footer>
+  </body>
+</html>
