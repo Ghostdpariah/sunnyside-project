@@ -33,7 +33,7 @@
       }
 
       .container {
-        background-image: url(image-header.jpg);
+        background-image: url(images/image-header.jpg);
         background-position: center;
         background-size: cover;
         height: 100vh;
@@ -49,6 +49,7 @@
         display: flex;
         gap: 50px;
       }
+
       nav .nav-links a {
         text-decoration: none;
         color: whitesmoke;
@@ -66,13 +67,14 @@
       }
 
       h1 {
-        font-size: 50px;
+        font-size: 60px;
         position: absolute;
         bottom: 400px;
-        right: 30%;
         color: white;
         font-family: "fraunces";
         letter-spacing: 5px;
+        margin-left: 30%;
+        padding-bottom: 100px;
       }
 
       .head-arrow img {
@@ -81,63 +83,120 @@
         left: 50%;
       }
 
-      .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0;
-        margin: 0;
-        padding: 0;
+      /* First Flex Section */
+
+      .flex-one-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
-      .grid-item {
+
+      .flex-one-item {
         margin: auto;
       }
 
-      .grid-item h2 {
+      .flex-one-item h2 {
         font-size: 30px;
-        text-align: center;
         font-family: "fraunces";
-        justify-content: space-between;
-        height: 80px;
-        font-weight: 700;
+        font-weight: 900;
       }
 
-      .grid-item p {
-        text-align: center;
+      .flex-one-item p {
         line-height: 30px;
         font-family: "Barlow";
         font-weight: 600;
         color: hsl(232, 10%, 55%);
       }
-      .grid-item h3 {
-        text-align: center;
+
+      .flex-one-item a {
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        font-family: "Fraunces";
       }
 
-      .overlay {
+      .flex-one-container img {
+        width: 735px;
+        height: auto;
+      }
+      /* Second Flex Section */
+
+      .flex-two-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .flex-two-container img {
+        width: 735px;
+        height: auto;
+      }
+
+      .flex-two-item h2 {
+        font-size: 30px;
+        font-family: "fraunces";
+        font-weight: 900;
+      }
+
+      .flex-two-item p {
+        line-height: 30px;
+        font-family: "Barlow";
+        font-weight: 600;
+        color: hsl(232, 10%, 55%);
+      }
+
+      .flex-two-item a {
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        font-family: "Fraunces";
+      }
+
+      .flex-two-item {
+        margin: auto;
+      }
+      /* Background images */
+      .background-images-container {
+        width: 100%;
+        height: 600px;
+        background-image: url(images/image-graphic-design.jpg),
+          url(images/image-photography.jpg);
+        background-position: left center, right center;
+        background-repeat: no-repeat;
+        background-size: 50%;
+      }
+
+      /* Graphics & Photography*/
+
+      .graphics-photography-container {
         display: flex;
         justify-content: space-around;
-        text-align: center;
-        position: relative;
-        margin-top: -210px;
+        margin-top: -250px;
       }
 
-      .overlay-item p {
-        line-height: 25px;
-        font-weight: 500;
-      }
-
-      .overlay-item h3 {
-        color: hsl(167, 40%, 24%);
-      }
-
-      .overlay-item span {
-        color: hsl(198, 62%, 26%);
-      }
-
-      .overlay h3 {
+      .graphics-photography-container h3 {
         font-family: "fraunces";
         font-weight: 700;
         font-size: 32px;
+        color: hsl(167, 40%, 24%);
+        text-align: center;
       }
+
+      .graphics-photography-container p {
+        line-height: 25px;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      .graphics p {
+        color: hsl(167, 40%, 24%);
+      }
+
+      .graphics-photography-container span {
+        color: hsl(198, 62%, 26%);
+      }
+
+      /* Testimonials */
 
       .testimonial {
         display: flex;
@@ -177,13 +236,15 @@
 
       h4 {
         text-align: center;
-        margin-top: 100px;
+        margin-top: 200px;
         letter-spacing: 10px;
         color: hsl(232, 10%, 55%);
       }
 
+      /* Gallery */
       .gallery {
         display: flex;
+        padding-bottom: 0px;
       }
 
       .gallery img {
@@ -196,6 +257,7 @@
         height: 300px;
         margin-top: -30px;
       }
+
       footer h5 {
         text-align: center;
         font-family: "Barlow";
@@ -213,6 +275,7 @@
         gap: 30px;
         padding-left: 620px;
       }
+
       .footer-links a {
         text-decoration: none;
         color: rgb(48, 114, 100);
@@ -245,34 +308,40 @@
     <header class="head-arrow">
       <h1>WE ARE CREATIVES</h1>
       <div>
-        <img src="icon-arrow-down.svg" alt="arrow_down" />
+        <img src="icons/icon-arrow-down.svg" alt="arrow_down" />
       </div>
     </header>
     <main>
-      <section class="grid-container">
-        <div class="grid-item">
-          <h2>Transform your <br />brand</h2>
+      <!-- First Flex Section -->
 
-          <p>
-            We are a full-service creative agency specializing in<br />
-            helping brands grow fast. Engage your clients through<br />
-            compelling visuals that do most of the marketing for you.
-          </p>
+      <div>
+        <div class="flex-one-container">
+          <div class="flex-one-item">
+            <h2>Transform your <br />brand</h2>
 
-          <p>
-            <a href="#">LEARN MORE</a>
-          </p>
+            <p>
+              We are a full-service creative agency specializing in<br />
+              helping brands grow fast. Engage your clients through<br />
+              compelling visuals that do most of the marketing for you.
+            </p>
+
+            <p>
+              <a href="#">LEARN MORE</a>
+            </p>
+          </div>
+
+          <div>
+            <img src="images/image-transform.jpg" alt="egg" />
+          </div>
         </div>
+      </div>
 
-        <div class="grid-item">
-          <img src="image-transform.jpg" alt="Egg" />
-        </div>
+      <!-- Second Flex Section -->
 
-        <div class="grid-item">
-          <img src="image-stand-out.jpg" alt="cup" />
-        </div>
+      <div class="flex-two-container">
+        <div><img src="images/image-stand-out.jpg" /></div>
 
-        <div class="grid-item">
+        <div class="flex-two-item">
           <h2>Stand out to the right <br />audience</h2>
 
           <p>
@@ -285,35 +354,34 @@
             <a href="#">LEARN MORE</a>
           </p>
         </div>
+      </div>
 
-        <div class="grid-item">
-          <img src="image-graphic-design.jpg" alt="Cherry" />
-        </div>
+      <section>
+        <!-- Background Images (Graphics & Photography) -->
+        <div class="background-images-container"></div>
 
-        <div class="grid-item">
-          <img src="image-photography.jpg" alt="Orange" />
-        </div>
-      </section>
+        <div class="graphics-photography-container">
+          <!-- Graphics -->
+          <div class="graphics">
+            <h3>Graphic Design</h3>
+            <p>
+              Graphic design Great design makes you memorable. We deliver<br />
+              artwork that underscores your brand message <br />and captures
+              potential clients’ attention.
+            </p>
+          </div>
+          <!-- Photography -->
+          <div class="photography">
+            <h3><span>Photography</span></h3>
 
-      <!--Graphics Design-->
-      <section class="overlay">
-        <div class="overlay-item">
-          <h3>Graphic Design</h3>
-          <p>
-            Graphic design Great design makes you memorable. We deliver<br />
-            artwork that underscores your brand message <br />and captures
-            potential clients’ attention.
-          </p>
-        </div>
-
-        <div class="overlay-item">
-          <h3><span>Photography</span></h3>
-
-          <p>
-            Increase your credibility by getting the most<br />
-            stunning, high-quality photos that improve your<br />
-            business image
-          </p>
+            <p>
+              <span>
+                Increase your credibility by getting the most<br />
+                stunning, high-quality photos that improve your<br />
+                business image</span
+              >
+            </p>
+          </div>
         </div>
       </section>
     </main>
@@ -326,7 +394,7 @@
         <div class="testimonial">
           <div>
             <div>
-              <img src="image-emily.jpg" alt="Emily" />
+              <img src="images/image-emily.jpg" alt="Emily" />
             </div>
 
             <p>
@@ -341,7 +409,7 @@
           <!--Thomas-->
           <div>
             <div>
-              <img src="image-thomas.jpg" alt="Thomas" />
+              <img src="images/image-thomas.jpg" alt="Thomas" />
             </div>
 
             <p>
@@ -356,7 +424,7 @@
           <!--Jennie F.-->
           <div>
             <div>
-              <img src="image-jennie.jpg" alt="Jennie" />
+              <img src="images/image-jennie.jpg" alt="Jennie" />
             </div>
 
             <p>
@@ -375,22 +443,22 @@
 
     <section class="gallery">
       <div>
-        <img src="image-gallery-milkbottles.jpg" alt="Milk_bottles" />
+        <img src="images/image-gallery-milkbottles.jpg" alt="Milk_bottles" />
       </div>
 
       <div>
-        <img src="image-gallery-orange.jpg" alt="Orange" />
+        <img src="images/image-gallery-orange.jpg" alt="Orange" />
       </div>
 
       <div>
-        <img src="image-gallery-cone.jpg" alt="Cone" />
+        <img src="images/image-gallery-cone.jpg" alt="Cone" />
       </div>
 
       <div>
-        <img src="image-gallery-sugarcubes.jpg" alt="Sugarcubes" />
+        <img src="images/image-gallery-sugarcubes.jpg" alt="Sugarcubes" />
       </div>
     </section>
-
+    <!-- Footer -->
     <footer>
       <h5>sunnyside</h5>
 
@@ -401,10 +469,10 @@
       </div>
 
       <div class="footer-icons">
-        <img src="icon-facebook.svg" />
-        <img src="icon-instagram.svg" />
-        <img src="icon-twitter.svg" />
-        <img src="icon-pinterest.svg" />
+        <img src="icons/icon-facebook.svg" />
+        <img src="icons/icon-instagram.svg" />
+        <img src="icons/icon-twitter.svg" />
+        <img src="icons/icon-pinterest.svg" />
       </div>
     </footer>
   </body>
