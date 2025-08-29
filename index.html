@@ -155,16 +155,26 @@
         margin: auto;
       }
       /* Background images */
-      .background-images-container {
-        width: 100%;
-        height: 600px;
-        background-image: url(images/image-graphic-design.jpg),
-          url(images/image-photography.jpg);
-        background-position: left center, right center;
-        background-repeat: no-repeat;
-        background-size: 50%;
+      .background-image-container {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
       }
 
+      .background-image-graphics {
+        background-image: url(images/image-graphic-design.jpg);
+        background-size: cover;
+        background-position: center left;
+        flex-grow: 1;
+      }
+
+      .background-image-photography {
+        background-image: url(images/image-photography.jpg);
+        background-size: cover;
+        background-position: center right;
+        flex-grow: 1;
+      }
       /* Graphics & Photography*/
 
       .graphics-photography-container {
@@ -358,7 +368,10 @@
 
       <section>
         <!-- Background Images (Graphics & Photography) -->
-        <div class="background-images-container"></div>
+        <div class="background-image-container">
+          <div class="background-image-graphics"></div>
+          <div class="background-image-photography"></div>
+        </div>
 
         <div class="graphics-photography-container">
           <!-- Graphics -->
