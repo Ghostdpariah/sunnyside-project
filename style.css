@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+  width: 100vw;
+}
+
+.container {
+  background-image: url(images/image-header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 50px;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+nav .nav-links button {
+  border: none;
+  width: 100px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Barlow";
+  font-weight: 600;
+  border-radius: 40px;
+  margin-top: -10px;
+}
+
+header h1 {
+  font-size: 60px;
+  position: absolute;
+  bottom: 400px;
+  color: white;
+  font-family: "fraunces";
+  letter-spacing: 5px;
+  margin-left: 30%;
+  padding-bottom: 100px;
+}
+
+.head-arrow img {
+  position: absolute;
+  bottom: 300px;
+  left: 50%;
+}
+
+/* First Flex Section */
+
+.first-flex-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.flex-one-item {
+  margin: auto;
+}
+
+.flex-one-item h2 {
+  font-size: 30px;
+  font-family: "fraunces";
+  font-weight: 900;
+}
+
+.flex-one-item p {
+  line-height: 30px;
+  font-family: "Barlow";
+  font-weight: 600;
+  color: hsl(232, 10%, 55%);
+}
+
+.flex-one-item a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-family: "Fraunces";
+}
+
+.flex-one-container img {
+  height: auto;
+}
+/* Second Flex Section */
+
+.flex-two-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.flex-two-container img {
+  width: 100%;
+  height: auto;
+}
+
+.flex-two-item h2 {
+  font-size: 30px;
+  font-family: "fraunces";
+  font-weight: 900;
+}
+
+.flex-two-item p {
+  line-height: 30px;
+  font-family: "Barlow";
+  font-weight: 600;
+  color: hsl(232, 10%, 55%);
+}
+
+.flex-two-item a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-family: "Fraunces";
+}
+
+.flex-two-item {
+  margin: auto;
+}
+
+.background-image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* height: 100vh; */
+}
+
+.background-image-graphics {
+  background-image: url(images/image-graphic-design.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.photography-container {
+  background-image: url(images/image-photography.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.background-image-container h3 {
+  font-family: "fraunces";
+  font-weight: 700;
+  font-size: 32px;
+  color: hsl(167, 40%, 24%);
+  text-align: center;
+  padding-top: 350px;
+}
+
+.background-image-container p {
+  line-height: 25px;
+  font-weight: 500;
+  text-align: center;
+  color: hsl(167, 40%, 24%);
+}
+
+.background-image-container span {
+  color: hsl(198, 62%, 26%);
+}
+
+/* Testimonials */
+
+.testimonial {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px;
+  gap: 0;
+  text-align: center;
+  margin-top: 50px;
+  padding-left: 80px;
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 20px;
+}
+
+.testimonial p {
+  font-family: "Barlow";
+  line-height: 25px;
+}
+
+.testimonial h5 {
+  font-family: "fraunces";
+  font-size: 16px;
+}
+
+.testimonial span {
+  font-family: "Barlow";
+  font-size: 10px;
+  color: hsl(232, 10%, 55%);
+  position: relative;
+  top: -30px;
+  letter-spacing: 1px;
+}
+
+h4 {
+  text-align: center;
+  margin-top: 100px;
+  letter-spacing: 10px;
+  color: hsl(232, 10%, 55%);
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  padding-bottom: 0px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: hsla(167, 40%, 52%, 0.7);
+  height: 300px;
+  margin-top: -30px;
+}
+
+footer h5 {
+  text-align: center;
+  font-family: "Barlow";
+  font-size: 30px;
+  font-weight: 750;
+  letter-spacing: 1px;
+  margin: auto;
+  color: rgb(48, 114, 100);
+  padding: 100px;
+  padding-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: rgb(48, 114, 100);
+}
+
+.footer-icons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 50px;
+}
