@@ -67,6 +67,7 @@ nav .icon-hamburger {
 
 .flex-one-item {
   margin: auto;
+  width: 70%;
 }
 
 .flex-one-item h2 {
@@ -265,6 +266,10 @@ footer h5 {
 /* Responsiveness */
 
 @media (max-width: 567px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
   /* Navigation */
   nav .nav-links {
     display: none;
@@ -290,5 +295,59 @@ footer h5 {
     width: 80%;
     text-align: center;
     padding-left: 60px;
+  }
+
+  /* First Flex */
+  main .first-flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  main .first-flex-container .flex-one-item {
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    width: 66%;
+  }
+
+  main .first-flex-container .flex-one-item p {
+    margin-bottom: 50px;
+  }
+
+  /* Second Flex */
+  main .flex-two-container {
+    display: block;
+    text-align: center;
+  }
+
+  main .flex-two-container .flex-two-item {
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    width: 80%;
+  }
+
+  main .flex-two-container .flex-two-item p {
+    margin-bottom: 50px;
+  }
+
+  /* Background Images: Graphics and Photography */
+  .background-image-container {
+    display: block;
+  }
+  .testimonial {
+    display: block;
+    width: 80%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+    padding: 0;
   }
 }
