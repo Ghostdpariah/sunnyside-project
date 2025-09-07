@@ -326,7 +326,7 @@ footer h5 {
 
   main .flex-two-container .flex-two-item {
     text-align: center;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     padding-top: 50px;
     width: 66%;
   }
@@ -389,7 +389,8 @@ footer h5 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 0;
+    /* column-gap: 0;
+    row-gap: 0; */
     padding: 0;
   }
 }
