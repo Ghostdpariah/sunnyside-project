@@ -329,7 +329,7 @@ footer h5 {
   }
 
   main .first-flex-container .flex-one-item h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   main .first-flex-container .flex-one-item p {
@@ -353,7 +353,7 @@ footer h5 {
   }
 
   main .flex-two-container .flex-two-item h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   main .flex-two-container .flex-two-item p {
@@ -375,7 +375,7 @@ footer h5 {
   }
 
   .background-image-graphics {
-    object-fit: contain;
+    background-size: cover;
   }
 
   .background-image-photography {
@@ -457,11 +457,13 @@ footer h5 {
   .hero-section h1 {
     font-size: 50px;
     font-weight: 800;
-    padding-top: 50px;
+    padding-top: 0px;
     width: 70%;
     text-align: center;
-    padding-left: 150px;
+    margin: auto;
+    padding-left: 100px;
     padding-bottom: 0;
+    margin-bottom: 50px;
   }
 
   .hero-section .hero-arrow img {
