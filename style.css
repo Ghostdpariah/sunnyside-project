@@ -384,12 +384,36 @@ footer h5 {
 
   .testimonial {
     display: block;
+    justify-self: center;
+    margin-left: -40px;
+    margin-right: 0;
+    width: 100%;
+  }
+  .testimonial h4 {
+    padding-left: 30px;
+  }
+  .testimonial h5 {
+    text-align: center;
+    padding-left: 30px;
+  }
 
-    width: 80%;
-    margin-left: 0;
-    padding-left: 0;
-    align-items: center;
-    padding-left: 40px;
+  .testimonial span {
+    padding-left: 30px;
+  }
+  .testimonial .thomas {
+    background-color: rgb(215, 215, 215);
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .testimonial .thomas span {
+    color: rgb(0, 0, 0);
+  }
+
+  .testimonial p {
+    width: 70%;
+    margin: auto;
+    padding-top: 20px;
   }
 
   .background-image-container h3 {
